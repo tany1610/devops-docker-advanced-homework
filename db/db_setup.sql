@@ -1,0 +1,15 @@
+set names 'utf8';
+create database marvel character set utf8 collate utf8_general_ci;
+grant all on marvel.* to 'tanya'@'%' identified by 'Supersecret';
+use marvel;
+create table heroes (id int primary key auto_increment, hero_name varchar(50), power varchar(50));
+INSERT INTO heroes (hero_name, points) VALUES ('Ikaris', 'All-powerful');
+INSERT INTO heroes (hero_name, points) VALUES ('Sersi', 'Matter manipulator');
+INSERT INTO heroes (hero_name, points) VALUES ('Kingo', 'Projectile blasts');
+INSERT INTO heroes (hero_name, points) VALUES ('Gilgamesh', 'Hand-to-hand strikes');
+INSERT INTO heroes (hero_name, points) VALUES ('Phastos', 'Talent for creating technology and weapons');
+INSERT INTO heroes (hero_name, points) VALUES ('Thena', 'Fierce warrior');
+INSERT INTO heroes (hero_name, points) VALUES ('Sprite', 'Illusions');
+INSERT INTO heroes (hero_name, points) VALUES ('Makkari', 'Super-fast');
+INSERT INTO heroes (hero_name, points) VALUES ('Druig', 'Advanced telepathy');
+INSERT INTO heroes (hero_name, points) VALUES ('Ajak', 'Communicate with the creators');
