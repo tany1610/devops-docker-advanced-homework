@@ -5,7 +5,5 @@ COPY ./web/index.php /usr/share/nginx/html/
 COPY ./web/eternals.png /usr/share/nginx/html/
 
 ADD nginx.conf /etc/nginx/sites-available/default.conf
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-ADD initial.sh /usr/bin/initial
-COPY ./web/index.php /var/www/html
-COPY ./web/eternals.png /var/www/html
+COPY ./web/index.php /usr/share/nginx/html
+COPY ./web/eternals.png /usr/share/nginx/html
