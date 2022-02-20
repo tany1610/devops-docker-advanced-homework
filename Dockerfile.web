@@ -18,8 +18,8 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 ADD nginx.conf /etc/nginx/sites-available/default.conf
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD initial.sh /usr/bin/initial
-ADD ./web/index.php /var/www/html/public
-ADD ./web/eternals.png /var/www/html/public
+ADD ./web/index.php /var/www/html
+ADD ./web/eternals.png /var/www/html
 RUN chmod +x /usr/bin/initial
 
 ENTRYPOINT [ "initial" ]
