@@ -2,9 +2,9 @@ FROM nginx:latest
 
 WORKDIR /etc/nginx/sites-available
 
-ADD ../../../home/vagrant/devops-docker-advanced-homework/nginx.conf /default.confac
+ADD ../../home/vagrant/devops-docker-advanced-homework/nginx.conf /default.confac
 
 WORKDIR /var/www/html
 
-COPY ../../../home/vagrant/devops-docker-advanced-homework/web/index.php /var/www/html
-COPY ../../../home/vagrant/devops-docker-advanced-homework/web/eternals.png /var/www/html
+COPY ../../home/vagrant/devops-docker-advanced-homework/web/index.php /var/www/html
+COPY ../../home/vagrant/devops-docker-advanced-homework/web/eternals.png /var/www/html
