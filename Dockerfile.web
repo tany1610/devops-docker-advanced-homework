@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-ADD ./home/vagrant/devops-docker-advanced-homework/nginx.conf /etc/nginx/sites-available/default.conf
+ADD /home/vagrant/devops-docker-advanced-homework/nginx.conf /etc/nginx/sites-available/default.conf
 
-COPY ./home/vagrant/devops-docker-advanced-homework/web/index.php /var/www/html
-COPY ./home/vagrant/devops-docker-advanced-homework/web/eternals.png /var/www/html
+COPY /home/vagrant/devops-docker-advanced-homework/web/index.php /var/www/html
+COPY /home/vagrant/devops-docker-advanced-homework/web/eternals.png /var/www/html
