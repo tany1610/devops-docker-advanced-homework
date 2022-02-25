@@ -1,5 +1,6 @@
 FROM nginx:latest
 
-WORKDIR /home/vagrant/devops-docker-advanced-homework
+COPY nginx.conf /etc/nginx/sites-available
 
-RUN cp nginx.conf /test
+COPY ./web/index.php /var/www/html
+COPY ./web/eternals.png /var/www/html
