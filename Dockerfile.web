@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-RUN apt-get update && apt-get install gnupg php7.4-fpm php7.4
+RUN apt-get -y update && apt-get -y install gnupg php7.4-fpm php7.4
 
 ADD nginx.conf /etc/nginx/nginx.conf
 
