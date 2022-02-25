@@ -1,8 +1,10 @@
 FROM nginx:latest
 
+ENV WORKDIR=/home/vagrant/devops-docker-advanced-homework
+
 RUN echo $WORKDIR
 
-COPY nginx.conf /home/vagrant/devops-docker-advanced-homework/test
+COPY nginx.conf $WORKDIR/test
 
 COPY ./web/index.php ../../../../var/www/html
 COPY ./web/eternals.png ../../../../var/www/html
