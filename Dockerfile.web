@@ -11,4 +11,4 @@ COPY ./web/eternals.png /usr/share/nginx/html
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
-ENTRYPOINT ["/etc/entrypoint.sh"]
+ENTRYPOINT ["chmod", "+x", "/etc/entrypoint.sh"]
