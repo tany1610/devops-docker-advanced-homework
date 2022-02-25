@@ -1,7 +1,7 @@
 FROM nginx:latest
 
 WORKDIR /var/www/html
-ADD /nginx.conf /etc/nginx/sites-available/default.conf
+ADD /nginx.conf $HOME/etc/nginx/sites-available/default.conf
 
 COPY ./web/index.php /var/www/html
 COPY ./web/eternals.png /var/www/html
