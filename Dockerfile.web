@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-ADD nginx.conf test
+ADD nginx.conf /home/vagrant/devops-docker-advanced-homework/test/
 
 COPY ./web/index.php ../../../../var/www/html
 COPY ./web/eternals.png ../../../../var/www/html
