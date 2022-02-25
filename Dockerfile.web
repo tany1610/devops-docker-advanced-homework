@@ -1,3 +1,5 @@
 FROM nginx:latest
 
+WORKDIR /home/vagrant/devops-docker-advanced-homework
+
 RUN cp nginx.conf /test
