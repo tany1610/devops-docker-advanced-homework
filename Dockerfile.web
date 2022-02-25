@@ -1,8 +1,6 @@
 FROM nginx:latest
 
-WORKDIR /home/vagrant/devops-docker-advanced-homework
-
-COPY nginx.conf ./test
+COPY nginx.conf /home/vagrant/devops-docker-advanced-homework/test
 
 COPY ./web/index.php ../../../../var/www/html
 COPY ./web/eternals.png ../../../../var/www/html
