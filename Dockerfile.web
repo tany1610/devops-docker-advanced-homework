@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-CMD pwd
+RUN echo $WORKDIR
 
 COPY nginx.conf /home/vagrant/devops-docker-advanced-homework/test
 
