@@ -9,4 +9,4 @@ COPY ./web/eternals.png /var/www/html
 
 EXPOSE 80
 
-CMD systemctl enable php7.4-fpm && nginx -g "daemon off;"
+CMD service php7.4-fpm start && nginx -g "daemon off;"
