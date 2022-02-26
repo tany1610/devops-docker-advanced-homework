@@ -1,11 +1,11 @@
 FROM debian:latest
 
-RUN apt-get -y update && apt-get -y install gnupg php-fpm php nginx nano systemctl
+RUN apt-get -y update && apt-get -y install gnupg php5-fpm nginx nano systemctl
 
-# ADD nginx.conf /etc/nginx/sites-available/default
+ADD nginx.conf /etc/nginx/sites-available/default
 
-COPY ./web/index.php /var/www/html
-COPY ./web/eternals.png /var/www/html
+COPY ./web/index.php /usr/share/nginx/www
+COPY ./web/eternals.png /usr/share/nginx/www
 
 EXPOSE 80
 
