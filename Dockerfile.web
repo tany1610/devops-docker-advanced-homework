@@ -1,8 +1,8 @@
 FROM debian:latest
 
-RUN apt-get -y update && apt-get -y install gnupg php-fpm php nginx
+RUN apt-get -y update && apt-get -y install gnupg php-fpm php nginx nano systemctl
 
-ADD nginx.conf /etc/nginx/sites-available/default
+# ADD nginx.conf /etc/nginx/sites-available/default
 
 COPY ./web/index.php /var/www/html
 COPY ./web/eternals.png /var/www/html
